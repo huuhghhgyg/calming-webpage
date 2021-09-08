@@ -116,6 +116,23 @@
     filter: brightness(1.08);
 }
 
+#panel-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    z-index: -1;
+    transition: .5s cubic-bezier(0, 0, 0, 1);
+}
+
+#panel-overlay.active{
+    opacity: 0.6;
+    z-index: auto;
+}
+
 #smallscreen-panel .panel-title {
     text-shadow: 1px 1px 2px #5e5e5e;
 }
@@ -125,7 +142,7 @@
 }
 
 #content {
-    transition: all .6s ease-out;
+    transition: all .6s cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: bottom;
 }
 
@@ -134,8 +151,12 @@
 }
 
 .bg-blur {
-    filter: blur(10px);
-    transform: translateY(20px);
+    /* 如果性能不佳可以关掉blur */
+    filter: blur(6px);
+
+    /* 向上移动 */
+    transform: translateY(-32px);
+    
 }
 
 

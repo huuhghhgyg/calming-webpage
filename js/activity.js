@@ -24,7 +24,11 @@ function switchPanel() {
 
         //允许滚动
         $('body').removeClass('noscroll');
+
+        //效果
         $('#content').removeClass('bg-blur');
+        $("#panel-overlay").removeClass('active');
+
     } else {
         //打开
         $("#bigscreen-panel").css("top", "0px");
@@ -35,7 +39,10 @@ function switchPanel() {
 
         //禁止滚动
         $('body').addClass('noscroll');
+
+        //效果
         $('#content').addClass('bg-blur');
+        $("#panel-overlay").addClass('active');
     }
 }
 
