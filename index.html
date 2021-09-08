@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calming</title>
+
+    <!-- jQuery(Staticfile CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+
+    <!-- MDL 修补MDUI的缺漏-->
+    <!-- <script src="./js/material.min.js"></script>
+    <link rel="stylesheet" href="./material.min.css"> -->
+
+    <!-- MDUI CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+
+    <!-- MDUI Script -->
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@openfonts/noto-sans-sc_chinese-simplified@1.44.9/index.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/activity.js"></script>
+
+    <script src="./js/load.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+</head>
+
+<body class="mdui-theme-layout-auto mdui-theme-primary-indigo">
+    <div id="content">
+        <!-- 标题部分 -->
+        <div class="mdui-container">
+            <div id="title-rack"></div>
+            <h1 id="headline-hi">Good Afternoon😉</h1>
+            <div class="mdui-divider"></div>
+        </div>
+
+        <!-- 内容部分 -->
+        <div class="mdui-container mdui-m-t-3" id="platte">
+
+            <!-- <h2 class="mdui-typo-title">自然音</h2>
+
+        <div class="mdui-row">
+ -->
+            <!-- 内容卡片 -->
+            <!-- <div class="card-container mdui-col-xs-12 mdui-col-sm-4 mdui-col-md-2 mdui-col-lg-1">
+                <div class="mdui-card">
+                    <div class="mdui-card-media">
+                        <img src="./img/ocean.webp" />
+                        <div class="mdui-grid-tile-actions">
+                            <div class="mdui-grid-tile-text">
+                                <div class="mdui-grid-tile-title">Title</div>
+                                <div class="mdui-grid-tile-subtitle"> -->
+            <!-- <i class="mdui-icon material-icons">nature</i> -->
+            <!-- This is subtitle</div>
+                            </div>
+                            <div class="mdui-grid-tile-buttons">
+                                <button onclick="play('Ocean','Continuous body of salt water that is contained in enormous basins on Earth’s surface.','./sound/ocean.m4a','./img/ocean.webp')" class="mdui-btn mdui-btn-icon">
+                                <i class="mdui-icon material-icons">play_arrow</i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <!-- Control Bar 支架 -->
+    <div id="bottom-rack"></div>
+
+    <!-- 大屏 -->
+    <div class="mdui-hidden-sm-down" id="bigscreen-panel">
+        <div class="mdui-container-fluid">
+            <div class="mdui-row mdui-row-gapless">
+                <div class="mdui-col-sm-3 mdui-theme-layout-auto" id="sm-left-panel">
+                    <!-- 左边 -->
+                    <div id="title-rack"></div>
+                    <div class="mdui-container mdui-m-l-5 mdui-m-t-3">
+                        <div class="mdui-typo-display-1 panel-title">Title</div>
+                        <div class="mdui-typo-subheading-opacity mdui-m-t-2 panel-subtitle">This is your subheading</div>
+                    </div>
+                </div>
+                <div class="mdui-col-sm-9" id="sm-right-panel">
+                    <!-- 右边 -->
+                    <img class="panel-img" src="./img/head_picture.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小屏 -->
+    <div class="mdui-hidden-md-up" id="smallscreen-panel">
+        <img class="panel-img" src="./img/head_picture.jpg">
+
+        <div class="mdui-container-fluid" id="smallscreen-title">
+            <div id="title-rack"></div>
+            <div class="mdui-container mdui-m-l-5 mdui-m-t-3">
+                <div class="mdui-typo-display-1 panel-title">Title</div>
+                <div class="mdui-typo-subheading-opacity mdui-m-t-2 panel-subtitle">This is your subheading</div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Control Bar -->
+    <div class="mdui-appbar mdui-shadow-3 mdui-color-white control-bar">
+        <div class="mdui-toolbar mdui-theme-layout-auto">
+            <a href="javascript:suspend()" class="mdui-btn mdui-btn-icon ">
+                <i class="mdui-icon material-icons" id="play-button-icon">play_arrow</i>
+            </a>
+            <span class="mdui-typo-title mdui-hidden-sm-down" style="margin-right: -8px;" id="now-playing-title">Now Playing :</span>
+            <span class="mdui-typo-title bar-title">欢迎</span>
+            <span class="mdui-typo-subheading-opacity" id="timer">0:00</span>
+            <audio id="audio" loop="loop"></audio>
+            <div class="mdui-toolbar-spacer "></div>
+
+            <a onclick="openVolumeBar()" class="mdui-btn mdui-btn-icon mdui-hidden-xs-down" id="bar-volume">
+                <i class="mdui-icon material-icons" id="volume-icon">volume_up</i>
+            </a>
+
+            <div class="mdui-hidden-xs-down" id="volume-bar-container">
+                <label class="mdui-slider">
+                <input type="range" class="" id="slide-bar" min="0" max="100" tabindex="0" value="100">
+            </label>
+            </div>
+
+            <input type="checkbox" id="arrowbox">
+            <label for="arrowbox">
+                <a onclick="switchPanel()" class="mdui-btn mdui-btn-icon" id="bar-icon-reverse">
+                    <i class="mdui-icon material-icons ">keyboard_arrow_up</i>
+                </a>    
+            </label>
+        </div>
+    </div>
+
+</body>
+
+</html>

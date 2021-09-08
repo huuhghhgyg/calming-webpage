@@ -1,0 +1,167 @@
+#title-rack {
+    height: 30vh;
+}
+
+.card-picture {
+    overflow-y: hidden;
+}
+
+.card-container {
+    margin-bottom: 20px;
+}
+
+.control-bar {
+    position: fixed;
+    /* 避免底部的空隙 */
+    bottom: -1px;
+    width: 100%;
+}
+
+#bottom-rack {
+    height: 60px;
+}
+
+
+/* 大屏设置 */
+
+#bigscreen-panel {
+    position: fixed;
+    top: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#sm-left-panel {
+    height: 100vh;
+}
+
+#sm-right-panel {
+    height: 100vh;
+    background-color: gainsboro;
+}
+
+.panel-img {
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    width: 100vw;
+}
+
+
+/* 小屏设置 */
+
+#smallscreen-panel {
+    height: 100%;
+    position: fixed;
+    /* 下移 */
+    top: 100vh;
+    width: 100vw;
+    transition: all .4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#smallscreen-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+.panel-title {
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+#arrowbox {
+    display: none;
+}
+
+#arrowbox:checked+label>a {
+    transform: rotate(180deg);
+}
+
+#bar-icon-reverse {
+    transition: all .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.panel-subtitle {
+    margin-right: 60px;
+    font-family: 'Noto Sans SC', '微软雅黑', '苹方', 'Roboto';
+}
+
+#now-playing-title {
+    width: 0px;
+    transition: .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+#timer {
+    transition: .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.card-img {
+    height: 360px;
+}
+
+.card-img>img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.card-img .lazyload {
+    transition: .3s all cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.card-img .lazyload:hover {
+    transform: scale(1.08);
+    filter: brightness(1.08);
+}
+
+#smallscreen-panel .panel-title {
+    text-shadow: 1px 1px 2px #5e5e5e;
+}
+
+#smallscreen-panel .panel-subtitle {
+    text-shadow: 1px 1px 2px #5e5e5e;
+}
+
+#content {
+    transition: all .6s ease-out;
+    transform-origin: bottom;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.bg-blur {
+    filter: blur(10px);
+    transform: translateY(20px);
+}
+
+
+/* 黑暗模式修复 */
+
+@media (prefers-color-scheme: dark) {
+    .mdui-toolbar {
+        background-color: #212121 !important;
+    }
+}
+
+#volume-bar-container {
+    /* justify-content: center;
+    align-items: center; */
+    /* padding-top: 5px; */
+    width: 0px;
+    margin: 0 -20px 0 -25px;
+    transition: .3s cubic-bezier(.4, 0, .2, 1);
+    padding: 0 20px;
+}
+
+.mdui-slider-thumb {
+    visibility: hidden;
+}
+
+img.lazyload {
+    width: 100%;
+    height: 360px;
+}

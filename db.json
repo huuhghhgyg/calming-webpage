@@ -1,0 +1,210 @@
+[{
+    "name": "自然音",
+    "content": [{
+            "name": "海洋",
+            "sound_path": "./sound/ocean.m4a",
+            "card_img_path": "./img/card_img/ocean-card.webp",
+            "panel_img_path": "./img/panel_img/ocean.webp",
+            "desc": "大海蕴藏着它的珍珠，蓝天怀抱着它的星辰 。<br><br>——海涅",
+            "subtitle": "傍晚的海边"
+        },
+        {
+            "name": "雨天",
+            "sound_path": "./sound/rain.m4a",
+            "card_img_path": "./img/card_img/rain-card.webp",
+            "panel_img_path": "./img/panel_img/rain.webp",
+            "desc": "风发出每一个声音，摇动每一片叶子上的水晶。<br><br>——查尔斯·布可夫斯基",
+            "subtitle": "落在地上的雨"
+        },
+        {
+            "name": "溪流",
+            "sound_path": "./sound/stream.mp3",
+            "card_img_path": "./img/card_img/stream-card.webp",
+            "panel_img_path": "./img/panel_img/stream.webp",
+            "desc": "河水淙淙，沿着山谷流淌，既不会停下，也不会匆忙。<br><br>——歌德",
+            "subtitle": "平静的溪流"
+        },
+        {
+            "name": "森林",
+            "sound_path": "./sound/forest.m4a",
+            "card_img_path": "./img/card_img/forest-card.webp",
+            "panel_img_path": "./img/panel_img/forest.webp",
+            "desc": "树木那一袭夏日的秀发，是知更鸟栖息繁衍的家。<br><br>——乔艾斯·基尔默",
+            "subtitle": "清静的晨间雨林"
+        },
+        {
+            "name": "碧波",
+            "sound_path": "./sound/wave.mp3",
+            "card_img_path": "./img/card_img/wave-card.webp",
+            "panel_img_path": "./img/panel_img/wave.webp",
+            "desc": "乍来结女伴，江头去浣纱。问讯郎消息，夜来灯烛花。夏歌女郎宛转歌，轻舟棹碧波。打动明珠碎，团团落青荷。<br><br>——张时彻",
+            "subtitle": "湖面碧波荡漾"
+        },
+        {
+            "name": "雷雨",
+            "sound_path": "./sound/thunder-rain.mp3",
+            "card_img_path": "./img/card_img/thunder-rain-card.webp",
+            "panel_img_path": "./img/panel_img/thunder-rain.webp",
+            "desc": "这是雨和电的先遣，它们飘落在磅礴的、蔚蓝的波涛之上。<br><br>——珀西·比希·雪莱",
+            "subtitle": "天边的雷与乌云"
+        },
+        {
+            "name": "森林之风",
+            "sound_path": "./sound/forest-wind.mp3",
+            "card_img_path": "./img/card_img/forest-wind-card.webp",
+            "panel_img_path": "./img/panel_img/forest-wind.webp",
+            "desc": "去想想无关紧要的事吧。去想想风吧。<br><br>——杜鲁门·卡波特",
+            "subtitle": "轻轻碰撞的树叶"
+        },
+        {
+            "name": "清晨",
+            "sound_path": "./sound/breeze.mp3",
+            "card_img_path": "./img/card_img/breeze-card.webp",
+            "panel_img_path": "./img/panel_img/breeze.webp",
+            "desc": "每一个清晨都是一个愉快的邀请，使我的生活和大自然一样和谐简单。<br><br>——梭罗",
+            "subtitle": "苏醒"
+        },
+        {
+            "name": "冰山",
+            "sound_path": "./sound/iceberg.mp3",
+            "card_img_path": "./img/card_img/iceberg-card.webp",
+            "panel_img_path": "./img/panel_img/iceberg.webp",
+            "desc": "冰在冰川上倾泻，雪在雪山下消融。<br><br>——马骅",
+            "subtitle": "消融的冰山"
+        },
+        {
+            "name": "冰原",
+            "sound_path": "./sound/iceland.mp3",
+            "card_img_path": "./img/card_img/iceland-card.webp",
+            "panel_img_path": "./img/panel_img/iceland.webp",
+            "desc": "我的心是旷野的鸟，在你的眼睛里找到了它的天空。<br><br>——泰戈尔",
+            "subtitle": "寂静无人的冰原"
+        }
+    ]
+}, {
+    "name": "城市音",
+    "content": [{
+            "name": "书店",
+            "sound_path": "./sound/bookstore.mp3",
+            "card_img_path": "./img/card_img/bookstore-card.webp",
+            "panel_img_path": "./img/panel_img/bookstore.webp",
+            "desc": "当你从书页上抬眼、然后合上书本，依然感觉到，住在那片光里。<br><br>——马克·斯特兰德",
+            "subtitle": "街边的书店"
+        },
+        {
+            "name": "茶餐厅",
+            "sound_path": "./sound/cafe-dimsum.mp3",
+            "card_img_path": "./img/card_img/cafe-dimsum-card.webp",
+            "panel_img_path": "./img/panel_img/cafe-dimsum.webp",
+            "desc": "给我书本、水果，和法国酒，以及好天气。<br><br>——大卫·奥格威",
+            "subtitle": "放松的时刻"
+        },
+        {
+            "name": "咖啡厅",
+            "sound_path": "./sound/coffee.m4a",
+            "card_img_path": "./img/card_img/coffee-card.webp",
+            "panel_img_path": "./img/panel_img/coffee.webp",
+            "desc": "我一定到过此地，何时、何因，却不知详。<br><br>——但丁",
+            "subtitle": "午后喧嚣的咖啡厅"
+        },
+        {
+            "name": "地铁",
+            "sound_path": "./sound/metro.mp3",
+            "card_img_path": "./img/card_img/metro-card.webp",
+            "panel_img_path": "./img/panel_img/metro.webp",
+            "desc": "想去的地方,不论多么遥远,很快就会到达。",
+            "subtitle": "在站与站之间穿梭"
+        },
+        {
+            "name": "办公室",
+            "sound_path": "./sound/office.mp3",
+            "card_img_path": "./img/card_img/office-card.webp",
+            "panel_img_path": "./img/panel_img/office.webp",
+            "desc": "果实的事业是尊贵的，花的事业是甜美的;但是让我做叶的事业吧，叶是谦逊地、专心地垂着绿荫的。<br><br>——泰戈尔",
+            "subtitle": "忙碌地处理工作"
+        },
+        {
+            "name": "火车站",
+            "sound_path": "./sound/train-station.mp3",
+            "card_img_path": "./img/card_img/train-station-card.webp",
+            "panel_img_path": "./img/panel_img/train-station.webp",
+            "desc": "去吧，但愿你一路平安，桥都坚固，隧道都光明。<br><br>——塔朗吉",
+            "subtitle": "开往远方的火车"
+        }
+    ]
+}, {
+    "name": "人和物",
+    "content": [{
+            "name": "咖啡豆",
+            "sound_path": "./sound/coffee-bean.mp3",
+            "card_img_path": "./img/card_img/coffeebean-card.webp",
+            "panel_img_path": "./img/panel_img/coffeebean.webp",
+            "desc": "只要还有咖啡喝，情况还能坏到哪里去？<br><br>——卡桑德拉·克莱尔",
+            "subtitle": "细细地研磨"
+        },
+        {
+            "name": "篝火",
+            "sound_path": "./sound/fire.mp3",
+            "card_img_path": "./img/card_img/fire-card.webp",
+            "panel_img_path": "./img/panel_img/fire.webp",
+            "desc": "时间迸出火焰，又消失无踪。<br><br>——托马斯·萨拉蒙",
+            "subtitle": "温暖而热烈的火焰"
+        },
+        {
+            "name": "铅笔",
+            "sound_path": "./sound/pencil.mp3",
+            "card_img_path": "./img/panel_img/pencil.webp",
+            "panel_img_path": "./img/panel_img/pencil.webp",
+            "desc": "问问我的笔，它支配我，我支配不了它。<br><br>——斯特恩",
+            "subtitle": "在纸上流动的笔"
+        },
+        {
+            "name": "斯诺克",
+            "sound_path": "./sound/pinball.mp3",
+            "card_img_path": "./img/card_img/snooker-card.webp",
+            "panel_img_path": "./img/panel_img/snooker.webp",
+            "desc": "每时每刻他都在使用细致的观察，准确的归纳和演绎推理。<br><br>——赫胥黎",
+            "subtitle": "球与球的碰撞"
+        },
+        {
+            "name": "爆米花",
+            "sound_path": "./sound/popcorn.mp3",
+            "card_img_path": "./img/card_img/popcorn-card.webp",
+            "panel_img_path": "./img/panel_img/popcorn.webp",
+            "desc": "人生就像爆米花，踹下一脚，漫天飞花，璀璨香甜，但很多人都不愿抬脚尝试，害怕那石破天惊的巨响。",
+            "subtitle": "一个一个地爆裂"
+        },
+        {
+            "name": "踏雪",
+            "sound_path": "./sound/step-snow.mp3",
+            "card_img_path": "./img/card_img/stepsnow-card.webp",
+            "panel_img_path": "./img/panel_img/stepsnow.webp",
+            "desc": "一个信使，揣着两封信。在雪中跋涉，收件人不详。<br><br>——阿巴斯·基亚罗斯塔米",
+            "subtitle": "步入白雪深处"
+        }
+    ]
+}, {
+    "name": "旋律",
+    "content": [{
+        "name": "冥想",
+        "sound_path": "./sound/meditation.m4a",
+        "card_img_path": "./img/card_img/meditation-card.webp",
+        "panel_img_path": "./img/panel_img/meditation.webp",
+        "desc": "流逝的不是时间，是我们。<br><br>——泰戈尔",
+        "subtitle": "天上落下的光"
+    }, {
+        "name": "良夜",
+        "sound_path": "./sound/NoMoreTears.mp3",
+        "card_img_path": "./img/panel_img/nomoretears.webp",
+        "panel_img_path": "./img/panel_img/nomoretears.webp",
+        "desc": "我把梦铺展在你的脚，轻一点啊，因为你脚踩的是我的梦。<br><br>——叶芝",
+        "subtitle": "温柔的夜晚时光"
+    }, {
+        "name": "威士忌",
+        "sound_path": "./sound/MissB.mp3",
+        "card_img_path": "./img/card_img/whiskey-card.webp",
+        "panel_img_path": "./img/panel_img/whiskey.webp",
+        "desc": "世上什么东西太多了都不好，但好的威士忌就多多都不够。<br><br>——马克·吐温",
+        "subtitle": "沉醉的角落"
+    }]
+}]
