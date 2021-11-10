@@ -128,7 +128,7 @@ function suspend() {
             //弹出提示
             mdui.snackbar({
                 message: '点击卡片的播放按钮进行播放',
-                position: 'right-top'
+                position: 'right-bottom'
             });
         } else {
             //继续播放
