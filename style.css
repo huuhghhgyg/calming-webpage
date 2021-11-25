@@ -2,6 +2,14 @@
     height: 30vh;
 }
 
+#headline-hi {
+    font-family: 'Noto Sans SC', '微软雅黑', '苹方', 'Roboto';
+}
+
+#headline-hi>span {
+    font-weight: normal;
+}
+
 .card-picture {
     overflow-y: hidden;
 }
@@ -116,7 +124,7 @@
     filter: brightness(1.08);
 }
 
-#panel-overlay{
+#panel-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -128,7 +136,7 @@
     transition: .5s cubic-bezier(0, 0, 0, 1);
 }
 
-#panel-overlay.active{
+#panel-overlay.active {
     opacity: 0.6;
     z-index: auto;
 }
@@ -153,10 +161,8 @@
 .bg-blur {
     /* 如果性能不佳可以关掉blur */
     filter: blur(6px);
-
     /* 向上移动 */
     transform: translateY(-32px);
-    
 }
 
 
