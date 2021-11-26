@@ -6,7 +6,7 @@
     font-family: 'Noto Sans SC', '微软雅黑', '苹方', 'Roboto';
 }
 
-#headline-hi>span {
+#headline-hi>span,.panel-title>span {
     font-weight: normal;
 }
 
