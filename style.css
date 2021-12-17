@@ -159,10 +159,17 @@
 }
 
 .bg-blur {
-    /* 如果性能不佳可以关掉blur */
-    filter: blur(6px);
+    /* 如果性能不佳可以关掉blur，默认大屏关闭blur */
+    /* filter: blur(6px); */
     /* 向上移动 */
     transform: translateY(-32px);
+}
+
+/* 小屏幕启用blur */
+@media (max-width: 1023.9px) {
+    .bg-blur{
+        filter: blur(6px);
+    }
 }
 
 
