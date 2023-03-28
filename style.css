@@ -1,9 +1,13 @@
-#title-rack {
+.title-rack {
     height: 10vh;
 }
 
-#title-rack-extend {
+.title-rack-extend {
     height: 10vh;
+}
+
+.title-rack-fixed {
+    height: 20vh;
 }
 
 #headline-hi {
