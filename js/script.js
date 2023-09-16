@@ -106,7 +106,7 @@ function SayHi() {
     // document.getElementById("headline-hi").innerText = output;
     $('#headline-hi').html(output);
     $('.panel-title').html(output);
-    $('.panel-subtitle').html('欢迎来到Calming，现在是'+now.toLocaleString());
+    $('.panel-subtitle').html('欢迎来到Calming，今天是'+now.toLocaleDateString());
 }
 
 function getRndInteger(min, max) {
