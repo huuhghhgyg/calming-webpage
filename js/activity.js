@@ -46,7 +46,10 @@ function switchPanel() {
     }
 }
 
+// 初始化播放时间
 var runningTimer;
+var min = 0;
+var sec = 0;
 
 function play(index) {
     var code = index.split('-');
@@ -64,6 +67,7 @@ function play(index) {
         noise.dir = info.sound_path; //声音位置
         noise.img = info.panel_img_path; //panel图
 
+        // debug信息
         // console.log(info.name); //标题
         // console.log(info.subtitle); //副标题
         // console.log(info.sound_path); //声音位置
@@ -72,10 +76,12 @@ function play(index) {
         clearInterval(runningTimer); //停止所有计时
 
         $("#play-button-icon").html("pause");
-        $("#timer").html("0:00");
         runningTimer = setInterval(function() { timer() }, 1000);
-        min = 0;
-        sec = 0;
+
+        // 如果需要每次播放都重置时间，就把下面两行注释去掉
+        // $("#timer").html("0:00");
+        // min = 0;
+        // sec = 0;
 
         // 开始播放
         a.src = noise.dir;
@@ -94,9 +100,6 @@ function play(index) {
     });
 
 }
-
-var min;
-var sec;
 
 function timer() {
     sec++;
