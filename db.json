@@ -206,5 +206,12 @@
         "panel_img_path": "./img/panel_img/whiskey.webp",
         "desc": "世上什么东西太多了都不好，但好的威士忌就多多都不够。<br><br>——马克·吐温",
         "subtitle": "沉醉的角落"
+    }, {
+        "name": "俱乐部",
+        "sound_path": "./sound/walnut-club-night.mp3",
+        "card_img_path": "./img/panel_img/walnut.webp",
+        "panel_img_path": "./img/panel_img/walnut.webp",
+        "desc": "放松是灵魂的润滑油。<br><br>——William James",
+        "subtitle": "一种舒适放松的氛围"
     }]
 }]
