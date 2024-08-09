@@ -209,8 +209,8 @@
     }, {
         "name": "俱乐部",
         "sound_path": "./sound/walnut-club-night.mp3",
-        "card_img_path": "./img/panel_img/walnut.webp",
-        "panel_img_path": "./img/panel_img/walnut.webp",
+        "card_img_path": "./img/card_img/club.webp",
+        "panel_img_path": "./img/panel_img/club.webp",
         "desc": "放松是灵魂的润滑油。<br><br>——William James",
         "subtitle": "激发灵感"
     }, {
