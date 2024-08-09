@@ -212,6 +212,13 @@
         "card_img_path": "./img/panel_img/walnut.webp",
         "panel_img_path": "./img/panel_img/walnut.webp",
         "desc": "放松是灵魂的润滑油。<br><br>——William James",
+        "subtitle": "激发灵感"
+    }, {
+        "name": "热带",
+        "sound_path": "./sound/tropics.mp3",
+        "card_img_path": "./img/card_img/tropics.webp",
+        "panel_img_path": "./img/panel_img/tropics.webp",
+        "desc": "有时候觉得我的心像是刚烤好的面包一样<br><br>——石川啄木",
         "subtitle": "一种舒适放松的氛围"
     }]
 }]
