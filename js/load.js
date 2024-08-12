@@ -1,12 +1,5 @@
 $(document).ready(function() {
     loadCards();
-    // setTimeout(() => {
-    //     lazyload();
-    // }, 500);
-
-    // loadCards(function() {
-    //     lazyload();
-    // });
 })
 
 
@@ -17,7 +10,7 @@ function makeCard(img, title, subtitle, f) {
         '<div class="card-container mdui-col-xs-12 mdui-col-sm-4 mdui-col-md-3 mdui-col-lg-2 mdui-col-xl-1">' + "\n" +
         '    <div class="mdui-card item-card">' + "\n" +
         '        <div class="mdui-card-media card-img">' + "\n" +
-        '            <img class="lazyload" data-src="' + img + '"/>' + "\n" +
+        '            <img loading="lazy" src="' + img + '"/>' + "\n" +
         '            <div class="mdui-grid-tile-actions">' + "\n" +
         '                <div class="mdui-grid-tile-text">' + "\n" +
         '                    <div class="mdui-grid-tile-title">' + title + '</div>' + "\n" +
@@ -57,6 +50,5 @@ function loadCards() {
                 $("#container-" + i).append(card);
             })
         });
-        lazyload();
     });
 }
