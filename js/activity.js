@@ -8,7 +8,7 @@ var noise = {
     img: ""
 };
 
-$(function() {
+$(function () {
     a = document.getElementById("audio");
 });
 
@@ -55,7 +55,7 @@ function play(index) {
     var code = index.split('-');
     // alert(code); //code[0]-种类；code[1]-卡片
 
-    $.getJSON("db.json", function(response) {
+    $.getJSON("db.json", function (response) {
         // console.log(response);
         var info = response[code[0]].content[code[1]];
 
@@ -76,7 +76,7 @@ function play(index) {
         clearInterval(runningTimer); //停止所有计时
 
         $("#play-button-icon").html("pause");
-        runningTimer = setInterval(function() { timer() }, 1000);
+        runningTimer = setInterval(function () { timer() }, 1000);
 
         // 如果需要每次播放都重置时间，就把下面两行注释去掉
         // $("#timer").html("0:00");
@@ -97,8 +97,21 @@ function play(index) {
 
         switchPanel();
         $('#arrowbox').prop('checked', true);
-    });
 
+        // 判断是否加载完成
+        setTimeout(() => {
+            if (!document.querySelector('.panel-img').complete) {
+                // console.log('loading at', (new Date).getMilliseconds()); // debug
+                $('.panel-img').addClass('loading');
+
+                document.querySelector(".panel-img").onload = () => {
+                    // console.log('loaded at', (new Date).getMilliseconds()); // debug
+                    $('.panel-img').removeClass('loading');
+                }
+            }
+            // console.log(document.querySelector('.panel-img').complete); // debug
+        }, 10);
+    });
 }
 
 function timer() {
@@ -138,7 +151,7 @@ function suspend() {
             $("#now-playing-title").css("width", "127px");
             a.play();
 
-            runningTimer = setInterval(function() { timer() }, 1000);
+            runningTimer = setInterval(function () { timer() }, 1000);
             $('#play-button-icon').html("pause");
         }
 
@@ -156,7 +169,7 @@ function openVolumeBar() {
         $('.mdui-slider-thumb').css('visibility', 'visible');
         // $('#volume-bar-container').css('margin-right', '-10px');
 
-        volumeTick = setInterval(function() {
+        volumeTick = setInterval(function () {
             // val = $('.mdui-slider-thumb').css('left');
             // alert(val);
             // val = val.replace("%", "");
@@ -172,7 +185,7 @@ function openVolumeBar() {
     }
 }
 
-$(document).on('input change', '#slide-bar', function() {
+$(document).on('input change', '#slide-bar', function () {
     // console.log($(this).val());
     var volume = $(this).val();
     // console.log(volume);
