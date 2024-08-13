@@ -37,6 +37,8 @@ function SayHi() {
             $('#headline-hi').html(output);
             $('.panel-title').html(output);
             $('.panel-subtitle').html('欢迎来到Calming，今天是' + now.toLocaleDateString());
+            
+            break;
         }
     }
 }
