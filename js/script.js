@@ -30,6 +30,7 @@ function SayHi() {
             }
 
             emotion = emotions[timeclass][getRndInteger(0, emotions[timeclass].length - 1)];
+            setFavicon(emotion); //设置图标
             
             output += ('<span>' + emotion + '</span>'); //装入span，取消font-weight，可以显示emoji
 
@@ -41,6 +42,20 @@ function SayHi() {
             break;
         }
     }
+}
+
+function setFavicon(emoji){
+    // 创建 SVG 字符串，用于将 emoji 作为 favicon
+    const svgEmoji = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <text y="0.9em" font-size="90">${emoji}</text>
+                 </svg>`;
+
+    // 转换为 URL
+    const svgUrl = `data:image/svg+xml,${svgEmoji}`;
+
+    // 设置 favicon
+    const link = document.getElementById("favicon");
+    link.href = svgUrl;
 }
 
 function getRndInteger(min, max) {
