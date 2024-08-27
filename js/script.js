@@ -45,16 +45,10 @@ function SayHi() {
 }
 
 function setFavicon(emoji){
-    // 创建 SVG 字符串，用于将 emoji 作为 favicon
-    const svgEmoji = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                    <text y="0.9em" font-size="90">${emoji}</text>
-                 </svg>`;
-
-    // 转换为 URL
-    const svgUrl = `data:image/svg+xml,${svgEmoji}`;
+    let svgUrl = `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:80;%22>${emoji}</text></svg>`
 
     // 设置 favicon
-    const link = document.getElementById("favicon");
+    let link = document.getElementById("favicon");
     link.href = svgUrl;
 }
 
