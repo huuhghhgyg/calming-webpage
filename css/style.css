@@ -61,7 +61,7 @@
     margin: 0;
     object-fit: cover;
     width: 100vw;
-    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: filter 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -188,7 +188,7 @@
 
 /* 图片加载 */
 .panel-img.loading {
-    opacity: 0.1;
+    filter: brightness(0.4);
 }
 
 
